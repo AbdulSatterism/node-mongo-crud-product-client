@@ -1,0 +1,17 @@
+.product img {
+    width: 100px;
+    border-radius: 15px;
+}
+
+.product {
+    text-align: center;
+}
+
+.product-info h4 {
+    margin-top: 0px;
+
+}
+
+.product-info p {
+    margin-top: 0px;
+}
