@@ -7,7 +7,7 @@ const AddProduct = () => {
     const handleAddProduct = (event) => {
         event.preventDefault();
 
-        fetch(`http://localhost:5000/products`, {
+        fetch('http://localhost:5000/products', {
             method: "POST",
             headers: {
                 "content-type": "application/json"
@@ -17,9 +17,10 @@ const AddProduct = () => {
             .then(res => res.json())
             .then(data => {
                 if (data.acknowledged) {
-                    alert("Product added succesfully");
-                    event.target.reset();
+                    alert("Product added successfully");
+                    event.target.reset()
                 }
+
             })
     }
 

@@ -8,6 +8,7 @@ const Update = () => {
 
     const handleAddProduct = (event) => {
         event.preventDefault();
+        // console.log(product)
         fetch(`http://localhost:5000/products/${storedProduct._id}`, {
             method: "PUT",
             headers: {
@@ -22,6 +23,20 @@ const Update = () => {
                     alert("Product updated successfully")
                 }
             })
+        // fetch(`http://localhost:5000/products/${storedProduct._id}`, {
+        //     method: "PUT",
+        //     headers: {
+        //         "content-type": "application/json"
+        //     },
+        //     body: JSON.stringify(product)
+        // })
+        //     .then(res => res.json())
+        //     .then(data => {
+        //         console.log(data)
+        //         if (data.modifiedCount > 0) {
+        //             alert("Product updated successfully")
+        //         }
+        //     })
     }
 
     const handleUpdate = event => {
